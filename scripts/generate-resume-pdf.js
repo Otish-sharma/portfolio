@@ -77,8 +77,7 @@ doc.setFont("helvetica", "normal")
 const currentExp = [
   "• Researched and implemented new technologies, tools and disciplines to aid continual quality improvements",
   "• Knowledge of Lidar, image and video annotation",
-  "• Coordinated with internal teams for data reporting and analysis",
-  "• Managed MIS and data operations",
+  
 ]
 
 currentExp.forEach((exp) => {
@@ -142,7 +141,7 @@ doc.text("Frontend: Next.js, React.js, JavaScript, TypeScript, HTML, CSS, Bootst
 yPos += 6
 doc.text("Backend: Node.js, Express.js, JWT", 20, yPos)
 yPos += 6
-doc.text("Databases: MongoDB, PostgreSQL, MySQL", 20, yPos)
+doc.text("Databases:PostgreSQL, MySQL", 20, yPos)
 yPos += 6
 doc.text("Tools & Others: Github, Gitlab, Redux, AWS Lambda, LangChain, Bedrock", 20, yPos)
 

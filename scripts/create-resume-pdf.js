@@ -46,7 +46,7 @@ Matriculation | Lato Yadav High School | August 2008 - May 2011
 SKILLS
 Frontend: Next.js, React.js, JavaScript, TypeScript, HTML, CSS, Bootstrap, Tailwind
 Backend: Node.js, Express.js, JWT
-Databases: MongoDB, PostgreSQL, MySQL
+Databases:  PostgreSQL, MySQL
 Tools & Others: Github, Gitlab, Redux, AWS Lambda, LangChain, Bedrock
 
 KEY ACHIEVEMENTS

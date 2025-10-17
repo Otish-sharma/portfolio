@@ -4,8 +4,8 @@ export default function Experience() {
       title: "Software Engineer",
       company: "Jai Infoway",
       location: "Ranchi",
-      period: "August 2024 - Present",
-      dateRange: "08/2024 - Present",
+      period: "August 2024 - September 2025",
+      dateRange: "08/2024 - 09/2025",
       description: [
         "A software development company specializing in web applications.",
         "Developed and maintained multiple web applications using Next.js and Node.js, with a focus on performance optimization and scalability",
@@ -22,7 +22,7 @@ export default function Experience() {
       ],
     },
     {
-      title: "SR. ITES Executive",
+      title: "Simulation Engineer",
       company: "Imerit Technology Services Pvt. Ltd",
       location: "Ranchi",
       period: "March 2021 - July 2024",
@@ -31,8 +31,7 @@ export default function Experience() {
         "Company providing data services for technology-related industries.",
         "Researched and implemented new technologies, tools and disciplines to aid continual quality improvements",
         "Knowledge of Lidar, image and video annotation",
-        "Coordinated with internal teams for data reporting and analysis",
-        "Managed MIS and data operations",
+        
       ],
     },
     

@@ -14,7 +14,7 @@ const skillCategories = [
     title: "Backend Development",
     icon: <Database className="w-6 h-6" />,
     color: "from-green-500 to-emerald-500",
-    skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "MySQL", "JWT"],
+    skills: ["Node.js", "Express.js", "PostgreSQL", "MySQL", "JWT"],
   },
   {
     title: "AI & Machine Learning",
@@ -26,7 +26,7 @@ const skillCategories = [
     title: "Tools & Technologies",
     icon: <Wrench className="w-6 h-6" />,
     color: "from-orange-500 to-red-500",
-    skills: ["Github", "Gitlab", "Redux", "Docker", "AWS", "Vercel"],
+    skills: ["Github", "Gitlab", "Redux", "AWS", "Vercel"],
   },
 ]
 
@@ -105,7 +105,7 @@ export default function Skills() {
         {/* Additional skills showcase */}
         <div className="mt-16 text-center">
           <div className="inline-flex flex-wrap gap-3 justify-center">
-            {["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "AWS", "LangChain", "Tailwind"].map(
+            {["React", "Next.js", "Node.js", "TypeScript",  "AWS", "LangChain", "Tailwind"].map(
               (tech, index) => (
                 <span
                   key={index}

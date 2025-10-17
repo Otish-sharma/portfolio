@@ -13,15 +13,15 @@ export default function ResumeViewer() {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <div className="flex justify-center gap-4 mb-8">
-            <Button
+            {/* <Button
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <Eye className="w-5 h-5 mr-2" />
               View Resume
-            </Button>
+            </Button> */}
             <a
-              href="/otish-kumar_resume.pdf"
+              href="/OtishKumarResume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
@@ -63,9 +63,9 @@ export default function ResumeViewer() {
                 <p className="text-gray-700 leading-relaxed">
                   Proficient in frontend and backend development, specializing in JavaScript, React, Next.js, Node.js,
                   and Generative AI. I excel at optimizing performance, enhancing scalability, and crafting reusable
-                  components. Leveraging tools like LangChain and Amazon Bedrock, I've boosted process efficiency by 45%
-                  and data processing by 70% through innovative AI-driven solutions. Passionate about tackling complex
-                  challenges and delivering impactful, scalable results.
+                  components. I am also proficient in n8n automation, enabling the creation of powerful, no-code workflows
+                  for business process automation and system integrations. Passionate about tackling complex challenges
+                  and delivering impactful, scalable results.
                 </p>
               </div>
 
@@ -75,27 +75,9 @@ export default function ResumeViewer() {
 
                 <div className="space-y-4">
                   <div className="border-l-2 border-gray-200 pl-4">
-                    <h3 className="font-semibold text-gray-900">SR. ITES Executive</h3>
-                    <p className="text-sm font-medium text-green-600">Imerit Technology Services Pvt. Ltd | Ranchi</p>
-                    <p className="text-sm text-gray-600 mb-2">03/2021 - 07/2024</p>
-                    <p className="text-sm text-gray-700 mb-2 italic">
-                      Company providing data services for technology-related industries.
-                    </p>
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      <li>
-                        • Researched and implemented new technologies, tools and disciplines to aid continual quality
-                        improvements
-                      </li>
-                      <li>• Knowledge of Lidar, image and video annotation</li>
-                      <li>• Coordinated with internal teams for data reporting and analysis</li>
-                      <li>• Managed MIS and data operations</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-l-2 border-gray-200 pl-4">
                     <h3 className="font-semibold text-gray-900">Software Engineer</h3>
                     <p className="text-sm font-medium text-green-600">Jai Infoway | Ranchi</p>
-                    <p className="text-sm text-gray-600 mb-2">08/2024 - Present</p>
+                    <p className="text-sm text-gray-600 mb-2">08/2024 - 09/2025</p>
                     <p className="text-sm text-gray-700 mb-2 italic">
                       A software development company specializing in web applications.
                     </p>
@@ -117,6 +99,23 @@ export default function ResumeViewer() {
                         • Built a portfolio website integrating an LLM to provide company insights and information
                       </li>
                       <li>• Developed a restaurant app to enhance customer ordering and management processes</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-2 border-gray-200 pl-4">
+                    <h3 className="font-semibold text-gray-900">Simulation Engineer</h3>
+                    <p className="text-sm font-medium text-green-600">Imerit Technology Services Pvt. Ltd | Ranchi</p>
+                    <p className="text-sm text-gray-600 mb-2">03/2021 - 07/2024</p>
+                    <p className="text-sm text-gray-700 mb-2 italic">
+                      Company providing data services for technology-related industries.
+                    </p>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>
+                        • Researched and implemented new technologies, tools and disciplines to aid continual quality
+                        improvements
+                      </li>
+                      <li>• Knowledge of Lidar, image and video annotation</li>
+                     
                     </ul>
                   </div>
 
@@ -188,10 +187,10 @@ export default function ResumeViewer() {
                     <strong>Backend:</strong> Node.js, Express.js, JWT
                   </p>
                   <p>
-                    <strong>Database:</strong> MongoDB, PostgreSQL, MySQL
+                    <strong>Database:</strong>  PostgreSQL, MySQL
                   </p>
                   <p>
-                    <strong>Tools & Others:</strong> Github, Gitlab, Redux, AWS Lambda, Langchain, Bedrock
+                    <strong>Tools & Others:</strong> Github, Gitlab, Redux, AWS Lambda, Terraform, n8n
                   </p>
                 </div>
               </div>
