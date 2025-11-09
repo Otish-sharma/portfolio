@@ -9,47 +9,69 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const projects = [
   {
     id: 1,
+    title: "YouTube Analytics Dashboard",
+    description:
+      "Comprehensive YouTube analytics platform for searching video details, view counts, playlist duration, and channel insights using YouTube Data API v3.",
+    image: "/images/youtube-analytics-project.png",
+    technologies: ["Next.js", "Node.js", "YouTube API", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://youtube-analytics-six.vercel.app/",
+    // githubUrl: "https://github.com/otish/youtube-analytics",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Village Information Portal",
+    description:
+      "Interactive village portal featuring local information, fundraising campaigns, weather updates, cultural programs, community meetings, and traditional shlokas.",
+    image: "/images/village-portal-project.png",
+    technologies: ["Next.js", "Node.js", "Tailwind CSS", "ShadCN UI", "TypeScript"],
+    liveUrl: "https://samochak.vercel.app/",
+    // githubUrl: "https://github.com/otish/village-portal",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "LLM-Powered Chatbot System",
     description:
       "Created intelligent chatbots using Amazon Bedrock, OpenAI and LangChain for improved user interaction, boosting process efficiency by 45%.",
     image: "/images/chatbot-project.png",
     technologies: ["Next.js", "LangChain", "Amazon Bedrock", "OpenAI", "Node.js"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/otish/chatbot",
+    // githubUrl: "https://github.com/otish/chatbot",
     featured: true,
   },
   {
-    id: 2,
+    id: 4,
     title: "Payroll Management System",
     description:
       "Designed and developed a comprehensive payroll management website to streamline employee salary processing with automated calculations.",
     image: "/images/payroll-project.png",
     technologies: ["React.js", "Node.js", "PostgreSQL", "Express.js", "JWT"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/otish/payroll",
-    featured: true,
+    // githubUrl: "https://github.com/otish/payroll",
+    featured: false,
   },
   {
-    id: 3,
+    id: 5,
     title: "Restaurant Management App",
     description:
       "Developed a restaurant application to enhance customer ordering and management processes with real-time updates and inventory tracking.",
     image: "/images/restaurant-project.png",
     technologies: ["Next.js", "PostgreSQL", "Tailwind CSS", "TypeScript","Node.js"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/otish/restaurant",
-    featured: true,
+    // githubUrl: "https://github.com/otish/restaurant",
+    featured: false,
   },
   {
-    id: 4,
+    id: 6,
     title: "AI-Powered Portfolio Website",
     description:
       "Built a portfolio website integrating an LLM to provide company insights and information with enhanced user interaction capabilities.",
     image: "/images/portfolio-project.png",
     technologies: ["Next.js","Node.js", "LangChain", "Tailwind CSS", "OpenAI API"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/otish/portfolio",
-    featured: true,
+    // githubUrl: "https://github.com/otish/portfolio",
+    featured: false,
   },
 ]
 
@@ -105,7 +127,10 @@ export default function Projects() {
                 </div>
               )}
 
-              <div className="relative h-48 overflow-hidden bg-gray-100">
+              <div 
+                className="relative h-48 overflow-hidden bg-gray-100 cursor-pointer" 
+                onClick={() => window.open(project.liveUrl, '_blank')}
+              >
                 {!imageErrors[project.id] ? (
                   <Image
                     src={project.image || "/placeholder.svg"}
@@ -121,11 +146,17 @@ export default function Projects() {
                         <span className="text-2xl">💻</span>
                       </div>
                       <p className="text-green-700 font-semibold text-sm">{project.title}</p>
-                      <p className="text-green-600 text-xs">Project Preview</p>
+                      <p className="text-green-600 text-xs">Click to View Live</p>
                     </div>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="bg-white/90 text-gray-800 px-4 py-2 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      View Live Project
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <CardHeader className="relative">
